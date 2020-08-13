@@ -23,7 +23,7 @@ function CatImager(CatApiRsp){
 //Fetch a random cat picture
 function Catpicturexhr(){
     CatImgTag.src = "";
-    xhr.open('GET', "http://localhost:3000/catpic", true);
+    xhr.open('GET', "https://asce-webdev-catapi.herokuapp.com/catpic", true);
     xhr.send(null);
 
     xhr.onreadystatechange = processRequest;
